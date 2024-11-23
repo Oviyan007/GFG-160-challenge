@@ -15,6 +15,16 @@ Output: 0
 Explanation: Here the prices are in decreasing order, hence if we buy any day then we cannot sell it at a greater price. Hence, the answer is 0.
 
 **Approach**
+1️⃣ Initialize two variables:
+
+minPrice to track the lowest stock price encountered so far (start with a high value).
+maxProfit to track the maximum profit achievable (start with 0).
+2️⃣ Traverse the array:
+Update minPrice if the current price is lower.
+Calculate profit as the difference between the current price and minPrice.
+Update maxProfit if the calculated profit is greater.
+3️⃣ Return maxProfit at the end.
+
 
 
 **code**
